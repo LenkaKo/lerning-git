@@ -1,4 +1,9 @@
 {
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "some-rules": "severity",
+    "other-rule": ["severity", { "option": 2 }]
+  },
   "name": "lerning-git",
   "version": "1.0.0",
   "description": "",
@@ -8,5 +13,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "html-validate": "^7.13.2",
+  }
 }
